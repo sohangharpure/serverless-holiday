@@ -1,0 +1,89 @@
+openapi: 3.0.0
+info:
+  description: |
+    This is an API to store and retrieve holidays, based on a country.
+  version: "1.0.0"
+  title: Holidays
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+tags:
+  - name: holidays
+    description: Everything about holidays
+    externalDocs:
+      description: Find out more
+      url: 'http://swagger.io'
+paths:
+  /holidays:
+    post:
+      tags:
+        - holidays
+      summary: Add holidays to the system
+      operationId: addHolidays
+      responses:
+        '405':
+          description: Invalid input
+      requestBody:
+        $ref: '#/components/requestBodies/Holidays'
+  '/holidays/{country}/{date}':
+    get:
+      tags:
+        - holidays
+      summary: Find holidays by country and date
+      description: Returns a single Holiday
+      operationId: getHolidayByCountryAndDate
+      parameters:
+        - name: country
+          in: path
+          description: country of the holiday to return
+          required: true
+          schema:
+            type: string
+        - name: date
+          in: path
+          description: date of the holiday to return
+          required: true
+          schema:
+            type: string
+            format: date-time
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Holidays'
+        '400':
+          description: Invalid country or date supplied
+        '404':
+          description: Holiday not found
+externalDocs:
+  description: Find out more about Swagger
+  url: 'http://swagger.io'
+components:
+  schemas:
+    Holidays:
+      type: object
+      properties:
+        name:
+          type: string
+        date:
+          type: string
+          format: date-time
+        country:
+          type: string
+  requestBodies:
+    Holidays:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Holidays'
+      description: Holidays object that needs to be added
+      required: true
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/sohang/holidays/1.0.0

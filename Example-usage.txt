@@ -1,0 +1,2 @@
+GET:
+https://n3tgs7qtxi.execute-api.us-east-1.amazonaws.com/beta/holidays/US/2020-07-04

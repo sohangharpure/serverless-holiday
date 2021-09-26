@@ -1,2 +1,2 @@
-# serverless-holiday
-An API for managing holiday Information, powered by Lambda and written in Python
+# holidays-api-lambda-python
+An API for managing holidays, powered by Lambda and written in Python

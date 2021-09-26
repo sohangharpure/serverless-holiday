@@ -1,0 +1,54 @@
+{    
+    "holidays": [
+        {
+            "name": "New Year's Day",
+            "date": "2020-01-01",    
+            "country": "US"            
+        },
+        {
+            "name": "Martin Luther King, Jr. Day",
+            "date": "2020-01-20",
+            "country": "US"            
+        },
+        {
+            "name": "George Washington's Birthday",
+            "date": "2020-02-17",
+            "country": "US"
+        },
+        {
+            "name": "Memorial Day",
+            "date": "2020-05-25",
+            "country": "US"
+        },
+        {
+            "name": "Independence Day",
+            "date": "2020-07-04",
+            "country": "US"
+        },
+        {
+            "name": "Labor Day",
+            "date": "2020-09-07",
+            "country": "US"
+        },
+        {
+            "name": "Columbus Day",
+            "date": "2020-10-12",
+            "country": "US"
+        },
+        {
+            "name": "Veterans Day",
+            "date": "2020-11-11",
+            "country": "US"
+        },
+        {
+            "name": "Thanksgiving Day",
+            "date": "2020-11-26",
+            "country": "US"
+        },
+        {
+            "name": "Christmas Day",
+            "date": "2020-12-25",           
+            "country": "US"
+        }
+    ]
+}

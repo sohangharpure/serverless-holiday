@@ -1,0 +1,34 @@
+{
+    "holidays": [
+        {
+            "name": "New Year's Day",
+            "date": "2020-01-01",           
+            "country": "UK"            
+        },
+        {
+            "name": "Good Friday",
+            "date": "2020-04-10",            
+            "country": "UK"
+        },
+        {
+            "name": "Early May Bank Holiday",
+            "date": "2020-05-08",
+            "country": "UK"
+        },
+        {
+            "name": "Spring Bank Holiday",
+            "date": "2020-05-25",
+            "country": "UK"
+        },
+        {
+            "name": "Christmas Day",
+            "date": "2020-12-25",
+            "country": "UK"
+        },
+        {
+            "name": "Boxing Day",
+            "date": "2020-12-26",            
+            "country": "UK"
+        }
+    ]
+}
